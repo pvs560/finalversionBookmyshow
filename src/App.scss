@@ -1,0 +1,146 @@
+$width60:60%;
+$width75:75%;
+$width100:100%;
+$center:center;
+$row:row;
+$column:column;
+$important:!important;
+$flex:flex;
+$width20:20%;
+$width80:80%;
+$height20:20rem;
+$textalign:justify;
+
+.App {
+    text-align: $center;
+    width: width75;
+    margin: auto;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    display: $flex;
+    flex-direction: $column;
+    align-items: $center;
+    justify-content: $center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .movie-padding {
+    padding: 0.5rem;
+  }
+  
+  .cardheight{
+    height: 25rem;
+  }
+  
+  @media (min-width: 576px){
+  .custom-card-deck {
+      margin: auto $important;
+  }
+  }
+  
+  @media (min-width: 576px){
+  .card-deck .card {
+    height: 25rem;
+    width: 19rem;
+    flex: none $important;
+    margin-bottom: 3px $important;
+  }
+  }
+  
+  .card-img-height-top{
+    height:50%;
+  }
+  
+  .card-body-custom{
+    padding:1rem $important;
+  }
+  
+  .flex-container{
+    display: $flex;
+  }
+  
+  .flex-container-v{
+    flex-direction: $row;
+  }
+  
+  .flex-align-center {
+    justify-content: $center;
+  }
+  
+  .flexwrap{
+    flex-wrap: wrap;
+  }
+  
+  .width100{
+    width: $width100;
+  }
+  
+  .flex-align-items-center {
+    align-items: $center;
+  }
+  
+  .width40{
+    width:40%;
+  }
+  
+  .flex-align-items-end{
+    justify-content: flex-end;
+  }
+  
+  .width60{
+    width:$width60;
+  }
+  
+  .flex-align-items-start{
+    justify-content: flex-start;
+  }
+
+  .showtimebutton {
+    -webkit-appearance: none;
+    background-color: white;
+    border: 1px solid #999;
+    border-radius: 2px;
+    color: #4abd5d;
+    font-size: $width100;
+    font-weight: 400;
+    background: 0 0;
+  }
+
+  .showmoviename {
+    font-weight: 700;
+    color: #333;
+  }
+
+  .moviescreen{
+    display: $flex;
+    flex-direction: $row;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .moviescreendetails{
+    display: $flex;
+    flex-direction: $column;
+    width: 30%;
+  }
+  .moviescreentime {
+    width: 70%;
+    display: $flex;
+    flex-direction: $column;
+    padding: 0.5rem;
+  }
+  .width20 {
+      width:$width20;
+  }
+  .width80 {
+    width:$width80;
+  }
+  .detailcardheight-top{
+    height:$height20
+  }
+  .moviedetailalign{
+      text-align: $textalign;
+  }
